@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Rossmc_ImageCompression>
+      <version>0.1.0</version>
+    </Rossmc_ImageCompression>
+  </modules>
+  <global>
+    <helpers>
+      <imagecompression>
+        <class>Rossmc_ImageCompression_Helper</class>
+      </imagecompression>
+    </helpers>
+	<models>
+	  <imagecompression>
+		<class>Rossmc_ImageCompression_Model</class>
+		<resourceModel>imagecompression_mysql4</resourceModel>
+	  </imagecompression>
+			<catalog>
+				<rewrite>
+					<product_image>Rossmc_ImageCompression_Model_Catalog_Product_Image</product_image>
+				</rewrite>
+			</catalog>
+	</models>
+  </global>
+</config> 
