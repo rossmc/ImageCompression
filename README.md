@@ -5,10 +5,8 @@ This is a simple module to remove the default magento behaviour to compress imag
 It works by simply rewriting the *Mage_Catalog_Model_Product_Image* class to remove the command to compress new images.
 i.e. `$this->_processor->quality($this->_quality);`
 
-The Module is built using the methods outlined this [Atwix blog post](http://www.atwix.com/magento/simple-products-report/) by building from Magento's native functionality without the use for rewrites.
-
 #### Installation
-* Download latest version [here](https://github.com/rossmc/Rossmc_ImageCompression/archive/master.zip). 
+* Download latest version [here](https://github.com/rossmc/ImageCompression/archive/master.zip). 
 * Unzip to Magento root folder.
 * Clear cache.
 * Logout from admin then login again to access the Report.
